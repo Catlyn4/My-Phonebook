@@ -46,8 +46,6 @@ $result = mysqli_query($db, "SELECT * FROM contacts WHERE login_id=".$_SESSION['
 					<li class="nav-item active">
 						<a class="nav-link" href="view.php">Home <span class="sr-only">(current)</span></a>
 					</li>
-					<input class="form-control col-sm-5" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">		
 					<ul class="navbar-nav mr-auto">
