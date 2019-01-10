@@ -1,23 +1,5 @@
 <?php session_start(); ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Login</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/jss/bootstrap.js">
-	<script src="bootstrap-4.0.0-beta.3-dist/jquery/jquery.min.js"></script>
-	<script src="bootstrap-4.0.0-beta.3-dist/js/bootstrap.bundle.min.js"></script>
-	<style>
-		body {
-			background:url('img/download.jpg') no-repeat;
-			width:2000px;
-			height:1000px
-		}
-	</style>
-</head>
-<body>
-	<div class="container"><br/>
+
 <?php
 include("connection.php");
 
@@ -49,7 +31,29 @@ if(isset($_POST['submit'])) {
 	}
 } else {
 ?>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=2.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/jss/bootstrap.js">
+	<style>
+		body {
+			background:url('img/3.jpg') no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div class="container"><br/>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.php">Welcome To My Phonebook <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>
 	<main class="bd-masthead" id="content" role="main">
 		<div class="col-md-8 order-md-2 text-center text-md-left pr-md-2">
 			<form name="form1" method="post" action=""><br/>

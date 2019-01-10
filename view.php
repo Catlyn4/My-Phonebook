@@ -16,6 +16,9 @@ $result = mysqli_query($db, "SELECT * FROM contacts WHERE login_id=".$_SESSION['
 <html lang="en">
 <head>
 	<title>Home</title>
+	<!-- Required meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,">
+	<!-- Bootstrap-->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/jss/bootstrap.js">
@@ -23,11 +26,13 @@ $result = mysqli_query($db, "SELECT * FROM contacts WHERE login_id=".$_SESSION['
 	<script src="bootstrap-4.0.0-beta.3-dist/js/bootstrap.bundle.min.js"></script>
 	<style>
 		body {
-			background:url('img/3.jpg') no-repeat;
+			background: url('img/3.jpg') no-repeat;
 		}
 	</style>
 </head>
 <body>
+<div>
+	<!-- Navbar-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<img src="img/per.jpg" width="50" height="50" alt="img/per.jpg"/>&nbsp;&nbsp;&nbsp;
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +49,7 @@ $result = mysqli_query($db, "SELECT * FROM contacts WHERE login_id=".$_SESSION['
 							</div>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="view.php">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">		
@@ -55,6 +60,7 @@ $result = mysqli_query($db, "SELECT * FROM contacts WHERE login_id=".$_SESSION['
 				</form>
 			</div>
 	</nav>
+	<!-- Display contact-->
 	<h2><center>Contact Lists</center></h2></p>
 	<div class="container">
 		<table class="table">
@@ -79,6 +85,7 @@ $result = mysqli_query($db, "SELECT * FROM contacts WHERE login_id=".$_SESSION['
 		?>
   <tbody>
 </table>
+</div>
 </div>
 </body>
 </html>

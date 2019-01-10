@@ -10,10 +10,9 @@ if(!isset($_SESSION['valid'])) {
 <html lang="en">
 <head>
 	<title>Adding Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/jss/bootstrap.js">
-	<script src="bootstrap-4.0.0-beta.3-dist/jquery/jquery.min.js"></script>
-	<script src="bootstrap-4.0.0-beta.3-dist/js/bootstrap.bundle.min.js"></script>
 	<style>
 		body {
 			background:url('img/3.jpg') no-repeat;
@@ -37,5 +36,7 @@ if(!isset($_SESSION['valid'])) {
 				<a class="btn btn-sm btn-outline-info" href="login.php">Login</a>
 			</div>
 	</nav>
+		<a class="btn btn-outline-dark" href="add.php">back</a>
+	
 </body>
 </html>

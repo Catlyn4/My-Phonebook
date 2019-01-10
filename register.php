@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Register</title>
+	
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/jss/bootstrap.js">
-	<script src="bootstrap-4.0.0-beta.3-dist/jquery/jquery.min.js"></script>
-	<script src="bootstrap-4.0.0-beta.3-dist/js/bootstrap.bundle.min.js"></script>
 	<style>
 		body {
-			background:url('img/reg.jpg') no-repeat;
-			width:3000px;
-			height:1000px;
+		  width: 100%;
+		  height: 400px;
+		  background-image: url('img/3.jpg');
+		  background-repeat: no-repeat;
 		}
 	</style>
+			
+	
 </head>
 <body>
 	<div class="container text-center">
